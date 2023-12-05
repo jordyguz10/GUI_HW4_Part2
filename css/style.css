@@ -1,0 +1,172 @@
+/*File: style.css
+    GUI Assignment: HW4 Part2
+    Jordy Guzman, UMass Lowell Computer Science, Jordy_guzmanalcaraz@student.uml.edu (c) 2023 
+    by Guzman. All rights reserved. May be freely copied or excerpted for educational 
+    purposes with credit to the author.
+*/
+.error {
+    color: red; /* Apply red color to error messages */
+}
+body{
+    margin: 0px 100px;
+    font-family: Helvetica;
+    background-color: #E6E3D3;
+}
+/*Styles scrollable container where table is */
+div{
+    overflow: scroll;
+    margin: auto;
+    width: 75%;
+    height: 700px;
+}
+/*Main header styling */
+h1{
+    font-size: 36px;
+    padding-bottom: 25px;
+    text-align: center;
+    text-decoration: underline;
+    color: purple;
+}
+h2{
+    font-size: 36px;
+    padding-bottom: 25px;
+    text-align: center;
+    text-decoration: underline;
+    color: purple;
+}
+/*Styling of form box */
+form {
+    margin: auto;
+    margin-bottom: 50px;
+    display: block;
+    color:black;
+    font-family: 'Trebuchet MS';
+    max-width: 425px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: skyblue;
+    border: 20px solid purple;
+    display: grid;
+    float: left;
+}
+/*Add padding between text and box */
+label{
+    padding: 10px;
+}
+input[type=number] {
+    padding: 10px; 
+    border: 2px solid #ccc; 
+    border-radius: 5px;
+}
+/*adding style and padding to button */
+input[type=submit]{
+    color: white;
+    font-family: Georgia;
+    font-weight: bold;
+    background-color: purple;
+    margin-top: 15px;
+    padding: 10px;
+    display: none;
+}
+input[type=button]{
+    color: white;
+    font-family: Georgia;
+    font-weight: bold;
+    background-color: purple;
+    margin-top: 15px;
+    padding: 10px;
+}
+/* general styling of table */
+table{
+    color: black;
+    margin: auto;
+    background-color: black;
+    font-weight: bold;
+}
+/*Set styling of header of table */
+th{
+    color: white;
+    background-color: purple;
+    padding: 10px;
+}
+td{
+    text-align: center;
+}
+/*Alternate background color of each row in table*/
+tr:nth-child(even){
+    background-color: #7DF9FF;
+}
+tr:nth-child(odd){
+    background-color: #5E8FC7;
+}
+#TableDisplay{
+    margin-bottom: 50px;
+}
+/*Add Styling to JQuery UI Slider */ 
+#slider1 {
+    background: white;
+    height: 25px;
+    width: 90%;
+}
+/*Changing color of slider handle to purple */ 
+#slider1 .ui-slider-handle {
+    background: purple;
+    height: 40px;
+}
+/*Add Styling to JQuery UI Slider */ 
+#slider2 {
+    background: white;
+    height: 25px;
+    width: 90%;
+}
+#slider2 .ui-slider-handle {
+    background: purple;
+    height: 40px;
+}
+/*Add Styling to JQuery UI Slider */ 
+#slider3 {
+    background: white;
+    height: 25px;
+    width: 90%;
+}
+#slider3 .ui-slider-handle {
+    background: purple;
+    height: 40px;
+}
+/*Add Styling to JQuery UI Slider */ 
+#slider4 {
+    background: white;
+    height: 25px;
+    width: 90%;
+}
+#slider4 .ui-slider-handle {
+    background: purple;
+    height: 40px;
+}
+/* Styling the tab section */
+#tabs{
+    width: 100%;
+    background: gray;
+    overflow: hidden;
+}
+#tabs .ui-tabs-nav {
+    background: purple;
+}
+#tabs .ui-tabs-nav li a {
+    font-weight: bold; /* Set tab headers' text to bold */
+    color: purple;
+}
+/* Sytling a close button for closing tabs */
+.ui-tabs-nav .ui-tabs-close {
+    float: right;
+    cursor: pointer;
+    margin-top: -10px;
+    margin-right: -10px;
+    font-size: 16px;
+}
+/* Change color of selected Tab Header */
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a {
+    background-color: #7DF9FF; /* Change this to your desired color */
+    color: #fff; /* Change text color if needed */
+}

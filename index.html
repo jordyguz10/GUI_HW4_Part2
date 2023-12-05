@@ -1,0 +1,68 @@
+<!--File: index.html
+    GUI Assignment: HW4 Part 2
+    Jordy Guzman, UMass Lowell Computer Science, Jordy_guzmanalcaraz@student.uml.edu (c) 2023 
+    by Guzman. All rights reserved. May be freely copied or excerpted for educational 
+    purposes with credit to the author.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Create a Multiplication Table!</title>
+    <!--Link style sheet to Html file-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  </head>
+  <body>
+    <!--Creates Header of Webpage-->
+    <h1>Create A Multiplication Table!</h1>
+    <!--Form created for user input-->
+    <form id="TableForm">
+      <!--Four values needed in user input-->
+      <label for="MinCol">Minimum Column Value:</label><br>
+      <input type="number" id="MinCol" name="MinCol"><br>
+      <!--Adding Slider for each userinput-->
+      <label for="slider1"></label>
+      <div id="slider1"></div>
+
+      <label for="MaxCol">Maximum Column Value:</label><br>
+      <input type="number" id="MaxCol" name="MaxCol"><br>
+      <!--Adding Slider for each userinput-->
+      <label for="slider2"></label>
+      <div id="slider2"></div>
+
+      <label for="MinRow">Minimum Row Value:</label><br>
+      <input type="number" id="MinRow" name="MinRow"><br>
+      <!--Adding Slider for each userinput-->
+      <label for="slider3"></label>
+      <div id="slider3"></div>
+
+      <label for="MaxRow">Maximum Row Value:</label><br>
+      <input type="number" id="MaxRow" name="MaxRow"><br><br>
+      <!--Adding Slider for each userinput-->
+      <label for="slider4"></label>
+      <div id="slider4"></div>
+
+      <!--Create button to send user input for dynamic table creation-->
+      <input type="submit" id="submit" value="Generate Table">
+      <!--Add Button that saves table to Tabs-->
+      <input type="button" id="save" value="Save Table">
+    </form>
+    <div id="TableDisplay">
+      <!--Creation of Table-->
+      <table id="MultTable"></table>
+    </div>
+    <!--Tab Section for saved Tables-->
+    <div id="tabs">
+      <!--Button that deletes all Saved Tabs-->
+      <input type="button" id="DeleteAll" value="Delete All Tabs">
+      <ul>
+      </ul>
+    </div>
+	</body>
+  <!--Link javascript file to Html-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/jquery.validate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="js/part2.js"></script>
+</html>
